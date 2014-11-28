@@ -12,6 +12,9 @@
 		49D6831E1A28DD93002D0758 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D6831D1A28DD93002D0758 /* Images.xcassets */; };
 		49D683211A28DD93002D0758 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D6831F1A28DD93002D0758 /* LaunchScreen.xib */; };
 		49D6832D1A28DD93002D0758 /* TouchKrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D6832C1A28DD93002D0758 /* TouchKrackerTests.m */; };
+		49D683381A28DDB0002D0758 /* BNRLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D683371A28DDB0002D0758 /* BNRLine.m */; };
+		49D6833B1A28DE36002D0758 /* BNRDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D6833A1A28DE36002D0758 /* BNRDrawView.m */; };
+		49D6833E1A28DE86002D0758 /* BNRDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D6833D1A28DE86002D0758 /* BNRDrawViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,12 @@
 		49D683261A28DD93002D0758 /* TouchKrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchKrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D6832B1A28DD93002D0758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49D6832C1A28DD93002D0758 /* TouchKrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchKrackerTests.m; sourceTree = "<group>"; };
+		49D683361A28DDB0002D0758 /* BNRLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRLine.h; sourceTree = "<group>"; };
+		49D683371A28DDB0002D0758 /* BNRLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRLine.m; sourceTree = "<group>"; };
+		49D683391A28DE36002D0758 /* BNRDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDrawView.h; sourceTree = "<group>"; };
+		49D6833A1A28DE36002D0758 /* BNRDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDrawView.m; sourceTree = "<group>"; };
+		49D6833C1A28DE86002D0758 /* BNRDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRDrawViewController.h; sourceTree = "<group>"; };
+		49D6833D1A28DE86002D0758 /* BNRDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRDrawViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +85,12 @@
 		49D683151A28DD93002D0758 /* TouchKracker */ = {
 			isa = PBXGroup;
 			children = (
+				49D683361A28DDB0002D0758 /* BNRLine.h */,
+				49D683371A28DDB0002D0758 /* BNRLine.m */,
+				49D683391A28DE36002D0758 /* BNRDrawView.h */,
+				49D6833A1A28DE36002D0758 /* BNRDrawView.m */,
+				49D6833C1A28DE86002D0758 /* BNRDrawViewController.h */,
+				49D6833D1A28DE86002D0758 /* BNRDrawViewController.m */,
 				49D6831A1A28DD93002D0758 /* AppDelegate.h */,
 				49D6831B1A28DD93002D0758 /* AppDelegate.m */,
 				49D6831D1A28DD93002D0758 /* Images.xcassets */,
@@ -211,7 +226,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				49D6831C1A28DD93002D0758 /* AppDelegate.m in Sources */,
+				49D6833E1A28DE86002D0758 /* BNRDrawViewController.m in Sources */,
+				49D683381A28DDB0002D0758 /* BNRLine.m in Sources */,
 				49D683191A28DD93002D0758 /* main.m in Sources */,
+				49D6833B1A28DE36002D0758 /* BNRDrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
