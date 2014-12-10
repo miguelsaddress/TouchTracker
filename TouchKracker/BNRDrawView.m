@@ -41,8 +41,23 @@
 }
 
 -(void)drawRect:(CGRect)rect{
-    [[UIColor blackColor] set];
+    [[UIColor blackColor] set]; //just in case
     for(BNRLine* line in self.finishedLines) {
+        float angle = fabsf([self calculateAngleOfLine:line]);
+        if (angle < 15){
+            [[UIColor brownColor] set];
+        }else if (angle < 30) {
+            [[UIColor redColor] set];
+        } else if (angle < 45) {
+            [[UIColor greenColor] set];
+        } else if (angle < 60) {
+            [[UIColor blueColor] set];
+        } else if (angle < 75) {
+            [[UIColor yellowColor] set];
+        } else {
+            [[UIColor blackColor] set];
+        }
+        
         [self strokeLine:line];
     }
     
@@ -100,6 +115,21 @@
         [self.linesInProgress removeObjectForKey:key];
     }
     [self setNeedsDisplay];
+}
+
+- (float) calculateAngleOfLine:(BNRLine*) line {
+    float m = 0;
+    m = ( line.end.y - line.begin.y ) / ( line.end.x - line.begin.x );
+    NSLog(@"pendiente: %f", m);
+
+    float angle = atan(m);
+    angle = 180 * angle / M_PI;
+    NSLog(@"Angle: %f", angle);
+    return angle;
+}
+
+-(void) logLine:(BNRLine*)line {
+    NSLog(@"Angle: %f", [self calculateAngleOfLine:line]);
 }
 
 @end
